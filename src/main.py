@@ -1,12 +1,9 @@
 def cal_odd_even(n):
-  odd=[]
-  even=[]
-  for i in range (1, n+1):
+  for i in range (n, n+1):
     if i % 2==0:
-      odd.append(i)
+      return 'Even'
     else:
-      even.append(i)
-  print('odd number', *odd)
-  print('even number', *even)
+      return "You number Odd"
     
-cal_odd_even(int(input('Enter your number: ')))
+result= cal_odd_even(int(input('Enter your number: ')))
+print(result)
